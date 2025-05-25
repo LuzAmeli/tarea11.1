@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background-color: #5595d5;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+
+header .logo {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-left: 5em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#box {
+    display: flex;
+    margin-top: 1em;
+    padding: 0 1em; 
+    gap: 1em; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+
+#railLeft {
+  width: 250px; /* o el valor que quieras */
+  background-color: #f8f8f8; /* opcional */
+  padding: 10px;
+}
+
+.alertLeft{
+  background-color: rgb(192, 189, 189);
+  margin: 0;
+  padding: 1em;
+}
+
+.great1 {
+  margin: 1.5em 0 1.5em 0;
+  color: #000;
+  background-color: #e5e4e4;
+  padding: 1em;
+  border: 1px solid #ccc;
+}
+nav.great1 ul {
+  display: block;
+  list-style: none;     
+  padding-left: 0;    
+  margin: 0;
+}
+
+nav.great1 ul li {
+  margin-bottom: 0.5em;  
+}
+
+nav.great1 ul li a {
+  color: rgb(23, 3, 210);
+  text-decoration: underline;
+}
+
+.great {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0;
+  width: 250px;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+
+.great h3 {
+  background-color: #cfe1f2;
+  margin: 0;
+  padding: 0.7em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+/* 4. Contenido central (Factura) */
+#middle {
+  width: 60%;
+  padding: 20px;
+  background-color: white;
+}
+
+#company {
+  width: 45%;
+  float: left;
+}
+
+
+#clientInfo {
+  float: right;
+  text-align: left;
+}
+hr {
+  clear: both;
+  margin-top: 50px;
+}
+
+aside {
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  float: right;
+  display: flex;
+  flex-direction: column; 
+  gap: 1.5em;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+table img {
+  float: left;
+  margin-right: 10px;
+}
+
+.SendButton {
+  background-color: #539ae7;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1em;
+  border-radius: 5px;
+}
+
+#recentMessageList {
+  list-style: none;
+  padding: 0.5em 1em;
+  margin: 0;
+}
+
+#recentMessageList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.blockIcon {
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+}
+
+#recentMessageList li p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+#chList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#chList li {
+  overflow: hidden; 
+  padding: 10px 0;
+  margin: 1em 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.chNumber {
+  float: left;
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #333;
+}
+
+#chList p {
+  margin: 0;
+  line-height: 24px;
+  padding-top: 2px;
+}
+
+
+#sellList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#sellList li {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#sellList img {
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.bookTitle {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 15px;
+}
+aside .great h3 {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  #box {
+    flex-direction: column;
+  }
+
+  #railLeft, #middle, aside {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
